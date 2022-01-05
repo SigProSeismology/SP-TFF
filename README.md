@@ -1,17 +1,5 @@
 # SP-TFF
-Overview
-SeisPolPy is an open-source project which aims to provide a Python library for processing seismic time series. So far, SeisPolPy provides two, well known, methods that allow the extraction of relevant information from the seismological time series (see [CIT1975], [CIT1986]), as well as a new method developed by the authors. This latter method (RSTFR) consists of an adaptation of already existing methods and improves them by presenting the option of taking advantage of sparsity to process the data.
-
-SeisPolPy main objective is to empower its users with reliable and efficient methods to make the task of processing seismic time series more straightforward.
-
-Installation
-SeisPolPy is currently running and tested on Linux (32 and 64 bit) with Python 3.8.
-
-PyPI
-For installing the package through PyPI just run:
-
-pip3 install SeisPolPy
-or:
+This code package aims to present a methodology for high-resolution polarization analysis and filtering of seismic signals in the TF-domain. The main developments in this research work are: (a) reformulation of the eigenvalue decomposition polarization analysis (EDPA) in  TF-domain to alleviate the intrinsic shortcoming of \citet{pinnegar2006polarization} method analyzing linear particle motions, (b) combining the \ac{SP-TFR} to the formulation to obtain high-resolution TF-domains polarization parameters for discriminating nearby seismic phases, and (c)  incorporating \ac{TF}-domain directivity, rectilinearity, and amplitude attributes to extract (or eliminate) different seismic phases. The main focus is to discriminate between Love and Rayleigh from the body and coda waves.
 
 python3 -m pip install SeisPolPy
 Building and Installing
