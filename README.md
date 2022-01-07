@@ -1,26 +1,18 @@
 # Sparsity-Promoting Time-Frequency Filtering (SP-TFF)
-Tutorials and updated codes for the research paper: Sparsity-promoting approach to polarization analysis of seismic signals in the time-frequency domain.
+Tutorials and updated codes for the research paper: Sparsity-promoting approach to polarization analysis of seismic signals in the time-frequency domain, published in IEEE transaction in Geoscience and Remote sensing journal, DOI:10.1109/TGRS.2022.3141580
 
-## **The tutorials and codes have been tested on a Linux workstation.** I will constantly update this repo to make them easier to use and understand.
+## **The codes have been tested on MATLAB on both Linux and Windows OS.** I will constantly update this repo to make them easier to use and understand.
 
 ## Brief Introduction:
-Siamese Earthquake Transformer (S-EqT) is developed based on the Earthquake Transformer (EqT) (Mousavi et al., 2020, Nature Communications) (https://github.com/smousavi05/EQTransformer), which is an excellent method and a strong baseline for earthquake detection and phase picking. The primary purpose of the S-EqT model is to reduce the false-negative rate of the EqT model by leveraging latent information in the pre-trained EqT model and retrieving previously missed phase picks in low SNR seismograms based on their similarities to other confident phase picks in high-dimensional spaces.
+SP-TFF code package aims to present a methodology for high-resolution polarization analysis and filtering of seismic signals in the TF-domain. The main developments in this research work are: (a) reformulation of the eigenvalue decomposition polarization analysis (EDPA) in  TF-domain, (b) combining the SP-TFR to the formulation to obtain high-resolution TF-domains polarization parameters for discriminating nearby seismic phases, and (c)  incorporating TF-domain directivity, rectilinearity, and amplitude attributes to extract (or eliminate) different seismic phases. The main focus is to discriminate between Love and Rayleigh from the body and coda waves.
 
 ## Contents of this repo
-1. The S-EqT codes are for building the pre-trained S-EqT model.
+1. The synthetic and real example of the "Sparsity-promoting approach to polarization analysis of seismic signals in the time-frequency domain" are reproducible.
 
-2. The tutorial_01 shows the motivation of the S-EqT model.
-
-3. The tutorial_02 shows how to use the S-EqT model for building earthquake catalogs from real-world continuous seismic data.
+2. A fast and efficient code for sparsity-promoting time-frequency representation (SP-TFR) is presented.
 
 ## Installation
-```Bash
-conda create -n seqt
-conda activate seqt
-conda install python=3.6 tensorflow-gpu=1.14 keras-gpu=2.3.1 h5py=2.10 matplotlib=3.2 pyyaml cudatoolkit cudnn pandas tqdm pyproj jupyter notebook basemap
-conda install -c conda-forge obspy
-pip install keras-rectified-adam
-```
+Run the 
 Then enter the directories of tutorials and execute corresponding notebooks and scripts.
 ## Citation
 If you use the S-EqT codes in your research, please cite both:
