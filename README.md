@@ -11,106 +11,22 @@ SP-TFF code package aims to present a methodology for high-resolution polarizati
 
 2. A fast and efficient code for sparsity-promoting time-frequency representation (SP-TFR) is presented.
 
-## Installation
-Run the 
-Then enter the directories of tutorials and execute corresponding notebooks and scripts.
+## Running the synthetic and real examples
+Run POL_Synthetic_main.m and POL_Real_main.m codes
 ## Citation
-If you use the S-EqT codes in your research, please cite both:
+If you use the SP-TFF codes in your research, please cite:
 
-Zhuowei Xiao, Jian Wang*, Chang Liu, Juan Li, Liang Zhao, and Zhenxing Yao. (2021). Siamese Earthquake Transformer: A pair-input deep-learning model for earthquake detection and phase picking on a seismic array. Journal of Geophysics Research: Solid Earth. https://doi.org/10.1029/2020JB021444
-
-and
-
-S. Mostafa Mousavi, William L Ellsworth, Weiqiang Zhu, Lindsay Y Chuang, and Gregory C Beroza. (2020). Earthquake transformer—an attentive deep-learning model for simultaneous earthquake detection and phase picking. Nature Communications 11, 3952. https://doi.org/10.1038/s41467-020-17591-w
-
-If you use the pipeline in the tutorial, please cite the following papers as well:
-
-REAL for linking seismic phases:
-
-Miao Zhang, William L Ellsworth, and Gregory C Beroza. (2019). Rapid Earthquake Association and Location. Seismological Research Letters, 90(6), 2276–2284. https://doi.org/10.1785/0220190052
-
-HypoInverse for locating earthquakes:
-
-Fred W Klein. (2002). Userʼs Guide to HYPOINVERSE-2000, a Fortran Program to Solve for Earthquake Locations and Magnitudes 4/2002 version. USGS, Open File Report 02-171 Version, 1, 123.
+Hamzeh Mohammadigheymasi, Paul Crocker, Maryam Fathi, Eduardo Almeida, Graca Silveira, Ali Gholami, and Martin Schimmel. (2022). Sparsity-promoting approach to polarization analysis of seismic signals in the time-frequency domain. IEEE transaction in Geoscience and Remote sensing journal, DOI:10.1109/TGRS.2022.3141580.
 
 ## Advantages of this work
-1. The S-EqT model can reduce the false-negative rate of the EqT model and perform well on earthquake detection and phase picking at the local scale (epicenter distance less than ~200 km).
-
-2. The increase in seismic phases can improve the earthquake location estimations and benefit the tomography study.
-
-3. The S-EqT model provides a novel approach for phase picking at the network level by cross-correlating seismograms of the same earthquake recorded at other stations in the latent domain. We may use this attribute for solving the phase association task in the future.
-
-## Limitations of this work
-1. Several questions remain regarding the attributes of feature maps extracted from the EqT model. For example, to what degree the path effect is discarded? How much information do the extracted features carry on event source? 
-
-2. The parameters of the EqT model are fixed in this study. The performance of S-EqT may be improved by applying a loss that constraints latent feature maps to optimize the pre-trained EqT model.
-
-3. Because the feature enhancing module is designed based on the observation of feature maps inside the pre-trained EqT model, it may not generalize well with other models. This module may be removed if the backbone model for feature extraction is trained from the stretch. 
-
-4. The geometry of the template and searching stations, which may benefit the similarity measurement, is not considered in the S-EqT model.
-
-5. The batch size in training and testing is set to be one for implementation convenience, which limits the training and testing speed.
+SP-TFF is a method for separating not only the Rayleigh waves from the Love waves, but also in discriminating them from the body and coda waves.
 
 ## Bug report
-If you occur any bugs or questions, you can either open a new issue in this repo or send me an e-mail (xiaozhuowei@mails.iggcas.ac.cn). 
-
-## Acknowledgments
-We would like to thank S. Mostafa Mousavi and his colleagues for developing the EqT model (https://github.com/smousavi05/EQTransformer), which is the base of our S-EqT model.
-
-We would like to thank Miao Zhang for developing REAL (https://github.com/Dal-mzhang/REAL).
-
-We would like to thank Fred Klein for developing HypoInverse (https://www.usgs.gov/software/hypoinverse-earthquake-location)
-
-We would like to thank Yijian Zhou for developing the python interface for HypoInverse (https://github.com/YijianZhou/Hypo-Interface-Py)
+If you occur any bugs or questions, you can either open a new issue in this repo or send me an e-mail (hamzeh@ubi.pt). 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# SP-TFF
-This code package aims to present a methodology for high-resolution polarization analysis and filtering of seismic signals in the TF-domain. The main developments in this research work are: (a) reformulation of the eigenvalue decomposition polarization analysis (EDPA) in  TF-domain, (b) combining the SP-TFR to the formulation to obtain high-resolution TF-domains polarization parameters for discriminating nearby seismic phases, and (c)  incorporating TF-domain directivity, rectilinearity, and amplitude attributes to extract (or eliminate) different seismic phases. The main focus is to discriminate between Love and Rayleigh from the body and coda waves.
-
-The source codes represents the methodology presented in the Sparsity-promoting approach to polarization analysis
-of seismic signals in the time-frequency domain paper published in the IEEE transacton in Geoscience and Remote sensing Journal.
-
-Contributors
-Hamzeh Mohammadigheymasi - Maintainer - Hamzeh Mohammadigheymasi
-
-License
+## License
 This project is licensed under the MIT License - check the LICENSE file for details.
 
 The code computes the outputs of the synthetic simulation of "Sparsity-promoting approach to
