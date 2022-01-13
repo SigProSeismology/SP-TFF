@@ -1,8 +1,6 @@
 # Sparsity-Promoting Time-Frequency Filtering (SP-TFF)
 Tutorials and updated codes for the research paper: H. Mohammadigheymasi et al., "Sparsity-promoting approach to polarization analysis of seismic signals in the time-frequency domain," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2022.3141580.
-## ** SP-TFF has been tested using several operating systems (Macintosh, Unix, and PC), and it should run on all platforms that support MATLAB.
-
-The codes have been tested on MATLAB on both Linux and Windows OS.** I will constantly update this repo to make them easier to use and understand.
+## ** SP-TFF has been tested using several operating systems (Macintosh, Unix, and PC), and it should run on all platforms that support MATLAB. I will constantly update this repo to make them easier to use and understand.
 
 ## Brief Introduction:
 SP-TFF code package aims to present a methodology for high-resolution polarization analysis and filtering of seismic signals in the TF-domain. The main developments in this research work are: (a) reformulation of the eigenvalue decomposition polarization analysis (EDPA) in  TF-domain, (b) combining the SP-TFR to the formulation to obtain high-resolution TF-domains polarization parameters for discriminating nearby seismic phases, and (c)  incorporating TF-domain directivity, rectilinearity, and amplitude attributes to extract (or eliminate) different seismic phases. The main focus is to discriminate between Love and Rayleigh from the body and coda waves.
