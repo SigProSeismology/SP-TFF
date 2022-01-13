@@ -7,7 +7,7 @@
 
 
 
-## ** SP-TFF has been tested using several operating systems (Macintosh, Unix, and PC), and it should run on all platforms that support MATLAB. 
+## SP-TFF has been tested using several operating systems (Macintosh, Unix, and PC), and it should run on all platforms that support MATLAB. 
 
 I will constantly update this repo to make them easier to use and understand.
 
