@@ -1,9 +1,8 @@
 # Sparsity-Promoting Time-Frequency Filtering (SP-TFF)
 
 
- Tutorials and updated codes for the research paper: 
-
-## H. Mohammadigheymasi et al., "Sparsity-promoting approach to polarization analysis of seismic signals in the time-frequency domain," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2022.3141580.
+## Tutorials and updated codes for the research paper: 
+ H. Mohammadigheymasi et al., "Sparsity-promoting approach to polarization analysis of seismic signals in the time-frequency domain," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2022.3141580.
 
 
 
